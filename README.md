@@ -22,3 +22,23 @@ DBeaver Ultimate：
 在 `.jkiss-lm` 下新建文件 `private-key.txt`，内容为生成的 `PRIVATE KEY` 的值
 
 完成后启动 `DBeaver` import-license 输入 `LICENSE`。
+
+## 联网激活失效
+结合 `ja-netfilter` 解决联网激活失效的问题。
+
+`ja-netfilter/config/dns.conf`
+```
+[DNS]
+EQUAL,dbeaver.com
+```
+
+`ja-netfilter/config/url.conf`
+```
+[URL]
+PREFIX,https://dbeaver.com/lmp/checkLicense
+```
+
+`${dbeaver.home}/dbeaver.ini`
+```
+-javaagent:${ja-netfilter.home}/ja-netfilter.jar
+```
