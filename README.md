@@ -24,7 +24,7 @@ DBeaver Ultimate：
 完成后启动 `DBeaver` import-license 输入执行 `main` 方法生成的 `LICENSE`。
 
 ## 联网激活失效
-结合 [ja-netfilter](https://github.com/oiltea/ja-netfilter) 解决联网激活失效的问题。
+结合 [ja-netfilter](https://gitee.com/ja-netfilter/ja-netfilter) 解决联网激活失效的问题。
 
 `ja-netfilter/config/dns.conf`
 ```
